@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div class="top">
+        <h4 style="margin: 0px">Text On the Button:</h4>
+        <div>
+          <input
+            type="text"
+            id="button-text"
+            name="button-text"
+            class="input-box"
+            placeholder="Buy my product"
+            value=""
+          />
+        </div>
+
+        <div>
+          <input
+            type="checkbox"
+            name="payment"
+            id="payment"
+            class="check-box"
+          />
+          <label for="payment">Allow Direct Payment</label>
+        </div>
+        <div>
+          <input type="checkbox" name="single" id="single" class="check-box" />
+          <label for="single">Allow Single-product purchase only</label>
+        </div>
+        <div>
+          <label>Select a product for which you want to generate button</label>
+          <select id="product">
+            <option value="demo">demo</option>
+            <option value="pixelsnap">PixelSnap 2</option>
+            <option value="cleanshot">CleanShot x</option>
+          </select>
+        </div>
+        <div>
+          <input type="checkbox" name="embed" id="embed" class="check-box" />
+          <label for="embed"
+            >Embed (Inserts into Webpage + button not displayed)</label
+          >
+        </div>
+      </div>
+      <div class="bottom">
+        <div style="padding: 10px">
+          <button id="custom-button" class="custom-button">Default</button>
+        </div>
+        <div class="code-container">
+          <pre id="script-text" class="code"></pre>
+          <pre id="anchor-text" class="code"></pre>
+        </div>
+        <!-- <script src="main.js"></script> -->
+        <div>
+          <h4>Copy paste code to view result</h4>
+        </div>
+        <div class="button-container">
+          <a class="gumroad-button" href="https://gum.co/demo/">Demo Popup</a>
+        </div>
+        <div class="button-container">
+          <a class="gumroad-button" href="https://gum.co/demo/wanted?true"
+            >Demo-direct</a
+          >
+        </div>
+        <div>
+          <a
+            class="gumroad-button"
+            href="https://maketheweb.gumroad.com/l/cleanshot/wanted?true"
+            >cleansho-direct</a
+          >
+        </div>
+        <div>
+          <a
+            class="gumroad-button"
+            href="https://maketheweb.gumroad.com/l/pixelsnap/"
+            embed="true"
+            >Buy my product</a
+          >
+        </div>
+        <div style="padding: 10px"></div>
+      </div>
+    </div>
+  </body>
+  <script src="main.js"></script>
+  <!-- <script src="modal.js"></script> -->
+</html>
